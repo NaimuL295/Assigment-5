@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,51 @@
       <script src="https://cdn.tailwindcss.com"></script>  <title>Document</title>
 
 </head>
-<body>
+<body class=" bg-gray-200 w-full h-screen ">
+  <!-- header -->
+    <header  class="md:container  w-10/12 p-1   mx-auto">
+   
+
+      <nav class=" flex items-center justify-between rounded-lg  bg-white py-2 px-2"> 
+        <ul class="flex items-center space-x-2 "  >
+          <li class="w-10"><a href="#"> <img src="./assets/logo.png" alt=""></a></li>
+          <li class="lg:text-3xl"><a   href="#">Dev <span class="font-semibold ">Board</span>  </a></li></ul>
+    <ul>
+      <button id="back-to-page" class="bg-indigo-600 btn text-white border-none"> Back to Dask</button>
+    </ul>
     
+        </nav>
+    </header>
+      <!-- main  -->
+      <section > <h1 class="text-center text-2xl font-medium">bloge</h1></section> 
+       <main  class="md:container  w-10/12  mx-auto  pt-2  rounded-lg space-y-4 ">
+        <div class="shadow-md bg-white text-black rounded-md px-2 py-2">
+          <h3 class="text-xl font-bold py-2 px2">Question-1: What are the different ways to select an element in the DOM? </h3>
+          <hr>
+<p class="font-medium text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusantium fuga impedit aspernatur culpa aliquid!</p>
+        </div>
+        <div class="shadow-md bg-white text-black rounded-md px-2 py-2">
+          <h3 class="text-xl font-bold py-2 px2">Question-2: What is the difference between innerHTML, innerText, and textContent ? </h3>
+          <hr>
+<p class="font-medium text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusantium fuga impedit aspernatur culpa aliquid!</p>
+        </div>
+        <div class="shadow-md bg-white text-black rounded-md px-2 py-2">
+          <h3 class="text-xl font-bold py-2 px2">Question-3: What is event delegation in the DOM?  </h3>
+          <hr>
+<p class="font-medium text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusantium fuga impedit aspernatur culpa aliquid!</p>
+        </div>
+        <div class="shadow-md bg-white text-black rounded-md px-2 py-2">
+          <h3 class="text-xl font-bold py-2 px2">Question-4: What is event bubbling in the DOM? </h3>
+          <hr>
+<p class="font-medium text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusantium fuga impedit aspernatur culpa aliquid!</p>
+        </div>
+        <div class="shadow-md bg-white text-black rounded-md px-2 py-2">
+          <h3 class="text-xl font-bold py-2 px2"> Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+          <hr>
+<p class="font-medium text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusantium fuga impedit aspernatur culpa aliquid!</p>
+        </div>
+       </main>
+      <script src="./script/blog.js"> </script>
+      <script src="./script/script.js"></script>
 </body>
 </html>

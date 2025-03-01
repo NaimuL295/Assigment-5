@@ -10,20 +10,22 @@
 </head>
 <body class="">
 <!-- header style -->
-<header class="md:container  w-9/12  mx-auto bg-gray-100 pt-2 rounded-lg">
+<header class="md:container  w-9/12  mx-auto bg-gray-100 pt-2  rounded-lg">
     <section>
         <nav class="flex justify-between  items-center  px-4   ">
             <div class="w-9/12 mt-5 mb-5 ">
             <ul class="flex items-center space-x-2"  >
-                <li class="w-10"><a href="#"> <img src="./img/Vector (1).png" alt=""></a></li>
+                <li class="w-10"><a href="#"> <img src="./assets/logo.png" alt=""></a></li>
                 <li class="lg:text-3xl"><a   href="#">Dev <span class="font-semibold ">Board</span>  </a></li>
             </ul>    
             </div>
             <!--  -->
             <div>
                 <ul class="flex items-center p2-4 space-x-4 justify-center">
-                    <li><a href="#"  > <input   type="checkbox" value="10">  <span id="nav-rigth">100</span></a></li>
-                    <li class="w-10"><a href="#"><img src="./img/Group 8.png" alt=""></a></li>
+                    <li><a href="#"  >
+                         <img  class="w-5" src="./assets/checkbox.png" alt=""></a></li>
+                         <li> <span id="nav-rigth">20</span> </li>
+                    <li class="w-10"><a href="#"><img src="./assets/theme-btn.png" alt=""></a></li>
                 </ul>        
 
             </div>
@@ -38,24 +40,23 @@
     <!-- two item  and  view page div -->
      <!-- section main start -->
 <section class="w-9/12 ">
-<div class=" grid  grid-cols-4    justify-items-center gap-2 px-5">
-    <div class="flex space-x-1 items-center w-full  justify-center gap-4 bg-white rounded-xl ">
-  <div>   <input class="w-5 h-5"  type="checkbox" name="" id="">  </div>
-        <div> <h5>Task Assigned </h5><span id="left-text">05 </span>
+<div class=" grid grid-cols-4    justify-items-center gap-2 px-5">
+    <div class="bg-[#F4F7FF]   flex space-x-1 items-center w-full  justify-center gap-4  rounded-xl ">
+  <div>   <img class="w-8"  src="./assets/checkbox.png" alt=""> </div>
+        <div class="text-base"> <h5>Task Assigned </h5><span id="left-text">6 </span>
          </div>
 </div>
 <!-- 2 -->
 <div  id="next-page"  class="col-span-2  flex  items-center justify-center p-10  
 bg-gradient-to-l from-blue-300 to-blue-700 rounded-xl px-5 py-5"> 
-    <img   class="w-5" src="./img/fi_18577309.png" alt="">
+    <img   class="w-10" src="./assets/board.png" alt="">
     <h6 class="text-white text-2xl " >Discover Something New Today!  </h6>
       </div>
       <!-- 3 -->
-    <div class="bg-zinc-100 w-full  items-center justify-center flex gap-9  rounded-xl " >
+    <div class="bg-zinc-100 w-full  items-center justify-center flex   rounded-xl " >
         <div class=" flex justify-between items-center ">
-            <img src="./img/Group 13.png" alt="">
-            <h2 id="Deadline-box" class="text-black">one</h2>
-
+            <img class="bg-white" src="./assets/calender.png" alt="">
+            <h2 id="Deadline-box" class="text-black pl-1 text-base font-normal">one</h2>
         </div>    
 </div>
 </div>
@@ -65,80 +66,81 @@ bg-gradient-to-l from-blue-300 to-blue-700 rounded-xl px-5 py-5">
     <div  class="grid lg:grid-cols-3  justify-items-center  mt-5  gap-2  ">
         <ul class="bg-gray-200   rounded-lg px-4 py-4 space-y-2  ">
             <li><button class="bg-white px-4 py-1   rounded-lg">Shop Ease </button>  </li>
-         <li> Fix Mobile Button Issue </li>
-         <li> <h6  id="mid-text" class=" bg-white text-base  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+         <li id="text-title" > Fix Mobile Button Issue </li>
+         <li> <h6   class=" bg-white text-base  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
             and ensure onClick works properly  </h6> </li>
             <div class="flex justify-between">
           <ul>
             <li>Deadline</li>
            <li id="time-box-text"></li>
           </ul>    
-                <button class="btn bg-blue-600 text-white ">Completed</button>
+          <button  id="btn-box"class="text-white"   >Completed</button>
             </ul>
     <!--  -->
     <ul class="bg-gray-200   rounded-lg px-4 py-4 space-y-2  ">
         <li><button class="bg-white px-4 py-1   rounded-lg">CloudSync</button>  </li>
-     <li> Add Dark Mode </li>
-     <li> <h6  id="mid-text" class=" bg-white text-base  text-gray-500 rounded-md py-1 px-1 " >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+     <li  id=""> Add Dark Mode </li>
+     <li> <h6 class=" bg-white text-base  text-gray-500 rounded-md py-1 px-1 " >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
         and ensure onClick works properly  </h6> </li>
         <div class="flex justify-between">
       <ul>
         <li>Deadline </li>
        <li id="time-box-text"></li>
       </ul>    
-            <button class="btn bg-blue-600 text-white">Completed</button>
+   
+            <button  id="btn-box" class=" bg-blue-600 text-white">Completed</button>
         </ul>
     <!--  -->
     <ul class="bg-gray-200   rounded-lg px-4 py-4 space-y-2  ">
         <li><button class="bg-white px-4 py-1   rounded-lg ">SwiftPay </button>  </li>
-     <li>Optimize  Home page  </li>
-     <li> <h6  id="mid-text" class=" bg-white text-base  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+     <li id="text-title">Optimize  Home page  </li>
+     <li> <h6   class=" bg-white text-base  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
         and ensure onClick works properly  </h6> </li>
         <div class="flex justify-between ">
       <ul>
         <li>Deadline</li>
        <li id="time-box-text"></li>
       </ul>    
-            <button class="btn bg-blue-600 text-white ">Completed</button>
+            <button  id="btn-box" class="  bg-blue-600 text-white ">Completed</button>
         </ul>
     <!--  -->
     <ul class="bg-gray-200   rounded-lg px-4 py-4 space-y-2 ">
         <li><button class="bg-white px-4 py-1   rounded-lg">Meta </button>  </li>
-     <li> Add new emoji 🤲 </li>
-     <li> <h6  id="mid-text" class=" bg-white text-base  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+     <li id="text-title"> Add new emoji 🤲 </li>
+     <li> <h6   class=" bg-white text-base  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
         and ensure onClick works properly  </h6> </li>
         <div class="flex justify-between">
       <ul>
         <li>Deadline</li>
        <li id="time-box-text"></li>
       </ul>    
-            <button class="btn bg-blue-600 text-white ">Completed</button>
+            <button  id="btn-box" class="btn  bg-blue-600 text-white ">Completed</button>
         </ul>
     <!--  -->
     <ul class="bg-gray-200   rounded-lg px-4 py-4 space-y-2  ">
         <li><button class="bg-white px-4 py-1   rounded-lg ">Google LLC </button>  </li>
-     <li> Fix Mobile Button Issue </li>
-     <li> <h6  id="mid-text" class=" bg-white text-base  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+     <li  id="text-title"> Fix Mobile Button Issue </li>
+     <li> <h6   class=" bg-white text-base  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
         Integrate OpenAI API   </h6> </li>
         <div class="flex justify-between">
       <ul>
         <li>Deadline</li>
        <li id="time-box-text"></li>
       </ul>    
-            <button class="btn bg-blue-600 text-white  ">Completed</button>
+            <button  id="btn-box"   class="btn    bg-blue-600 text-white  ">Completed</button>
         </ul>
     <!--  -->
  <ul class="bg-gray-200   rounded-lg px-4 py-4 space-y-2 ">
     <li><button class="bg-white px-4 py-1   rounded-lg">Glassdoar </button>  </li>
- <li> Fix Mobile Button Issue </li>
- <li> <h6  id="mid-text" class=" bg-white text-base  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+ <li id="text-title"> Fix Mobile Button Issue </li>
+ <li> <h6  class=" bg-white text-base  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
     Improve Job searching   </h6> </li>
     <div class="flex justify-between">
   <ul>
     <li>Deadline</li>
    <li id="time-box-text" class="text-black">one</li>
   </ul>    
-        <button class="btn  bg-blue-600 text-white">Completed</button>
+        <button id="btn-box"  class="btn    bg-blue-600 text-white">Completed</button>
     </ul>
     <!--  -->
  
@@ -150,17 +152,24 @@ bg-gradient-to-l from-blue-300 to-blue-700 rounded-xl px-5 py-5">
 </section>
 <!--  -->
 <!--  Clear History div -->
- <section id="Clear-History" class="flex  flex-1  justify-center ">
+ <section id="Clear-History" class=" w-2/12 mx-auto "> 
    <div  class="space-y-2  ">
-<h1 class="text-center text-xl"> Activity Log </h1>
-<button class="btn border-none text-xl"> Clear History </button>
-   </div>
- </section>
+
+<div class="flex justify-center items-center">
+  <div>
+    <h1 class="text-center text-lg"> Activity Log </h1> 
+   <button  class=" px-4 py-2 rounded-lg  shadow-xl  font-medium text-base bg-blue-600
+    text-white border-none "> Clear History </button>
+  </div></div>
+  <div   id="add-history" class="  space-y-4">
+ </div>
+</div>
+
+  </section>
 </section>
 </main>
     </div>
     <script src="./script/utility.js"></script>
     <script src="./script/script.js"></script>
-  
 </body>
 </html>
