@@ -27,14 +27,9 @@ for (const  element of timeBoxtext) {
 document.body.style.backgroundColor=colos
  })
 
+  const history = document.getElementById("add-history")
 
-
-
-
-
-  const history =document.getElementById("add-history")
-
-  const btnBox= document.querySelectorAll("#btn-box"); 
+  const btnBox = document.querySelectorAll("#btn-box"); 
   
 for (let  i= 0; i < btnBox.length; i++) {
   
@@ -58,14 +53,19 @@ box1=textTitle[i].textContent
   
   let  leftValue=leftnum-=1
   
+
+  if (leftValue<0) {
+    return alert("Board updated Succussfully");
+  }
   document.getElementById("left-text").innerText=leftValue;
   // left tex end
   
    const div=document.createElement("div");
    div.setAttribute("id" ,"child")
    div.innerHTML=`
-  <h5   class=" text-center bg-white py-1 font-medium px-[0.5rem]
-   text-sm rounded-md"> You have completed the ${box1}at${dateHMS}  </h5>`;
+  <h5   class=" text-center bg-[#F4F7FF] py-1 font-medium px-[0.5rem]
+   text-sm rounded-md">You have completed the ${box1}
+    at ${dateHMS}  </h5>`;
    
     history.appendChild(div)
   btnBox[i].setAttribute("disabile",true)
