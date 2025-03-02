@@ -21,6 +21,14 @@ for (const  element of timeBoxtext) {
 
  let colorchange= document.getElementById("color-generate")
 
+ colorchange.addEventListener("click",function () {
+  let  color=Math.ceil( Math.random()*256 )
+ let colos=`rgb(${color},${color},${color}) `;
+document.body.style.backgroundColor=colos
+ })
+
+
+
 
 
 
@@ -28,17 +36,12 @@ for (const  element of timeBoxtext) {
 
   const btnBox= document.querySelectorAll("#btn-box"); 
   
-
-
-
 for (let  i= 0; i < btnBox.length; i++) {
   
   btnBox[i].addEventListener("click",function(){
 
-  alert("board updated succussfully");
+  alert("Board updated Succussfully");
 
-  // console.log(textTitle);
-  
   // nav
 
   let box1=[]
@@ -59,8 +62,9 @@ box1=textTitle[i].textContent
   // left tex end
   
    const div=document.createElement("div");
+   div.setAttribute("id" ,"child")
    div.innerHTML=`
-  <h5 class=" text-center bg-white py-1 font-medium px-[0.5rem]
+  <h5   class=" text-center bg-white py-1 font-medium px-[0.5rem]
    text-sm rounded-md"> You have completed the ${box1}at${dateHMS}  </h5>`;
    
     history.appendChild(div)
@@ -77,8 +81,8 @@ box1=textTitle[i].textContent
 
 
 
-document.querySelector("#history-delete").addEventListener("click",function(){
-  const delet = document.getElementById("add-history")
+document.getElementById("history-delete").addEventListener("click",function(){
+  const delet = document.querySelector("#add-history")
 delet.innerHTML=""
   
   })
