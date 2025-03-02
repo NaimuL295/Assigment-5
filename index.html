@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
     <!-- cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
@@ -25,7 +26,7 @@
                     <li><a href="#"  >
                          <img  class="w-5" src="./assets/checkbox.png" alt=""></a></li>
                          <li> <span id="nav-rigth">20</span> </li>
-                    <li class="w-10"><a href="#"><img src="./assets/theme-btn.png" alt=""></a></li>
+                    <li  id="color-generate" class="w-10">   <a href="#"><img src="./assets/theme-btn.png" alt=""></a></li>
                 </ul>        
 
             </div>
@@ -63,24 +64,24 @@ bg-gradient-to-l from-blue-300 to-blue-700 rounded-xl px-5 py-5">
 <!-- 6 item  -->
 <section>
 
-    <div  class="grid lg:grid-cols-3  justify-items-center  mt-5  gap-2  ">
+    <div  class="grid lg:grid-cols-3  justify-items-center  mt-5  gap-2 px-2  ">
         <ul class="bg-gray-200   rounded-lg px-4 py-4 space-y-2  ">
             <li><button class="bg-white px-4 py-1   rounded-lg">Shop Ease </button>  </li>
-         <li id="text-title" > Fix Mobile Button Issue </li>
-         <li> <h6   class=" bg-white text-base  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+         <p  id="box-title"  class="  text-lg font-bold " >  Fix Mobile Button Issue </p> 
+         <li> <h6   class=" bg-white text-sm  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
             and ensure onClick works properly  </h6> </li>
             <div class="flex justify-between">
           <ul>
             <li>Deadline</li>
            <li id="time-box-text"></li>
           </ul>    
-          <button  id="btn-box"class="text-white"   >Completed</button>
+          <button  id="btn-box"class=" px-4 py-1 rounded-lg  bg-blue-600 text-white"   >Completed</button>
             </ul>
     <!--  -->
     <ul class="bg-gray-200   rounded-lg px-4 py-4 space-y-2  ">
         <li><button class="bg-white px-4 py-1   rounded-lg">CloudSync</button>  </li>
-     <li  id=""> Add Dark Mode </li>
-     <li> <h6 class=" bg-white text-base  text-gray-500 rounded-md py-1 px-1 " >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+     <p id="box-title"  class=" text-lg font-bold">Add Dark Mode </p>
+     <li> <h6 class=" bg-white text-sm  text-gray-500 rounded-md py-1 px-1 " >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
         and ensure onClick works properly  </h6> </li>
         <div class="flex justify-between">
       <ul>
@@ -88,59 +89,61 @@ bg-gradient-to-l from-blue-300 to-blue-700 rounded-xl px-5 py-5">
        <li id="time-box-text"></li>
       </ul>    
    
-            <button  id="btn-box" class=" bg-blue-600 text-white">Completed</button>
+            <button  id="btn-box" class=" px-4 py-1 rounded-lg  bg-blue-600 text-white ">Completed</button>
         </ul>
     <!--  -->
     <ul class="bg-gray-200   rounded-lg px-4 py-4 space-y-2  ">
         <li><button class="bg-white px-4 py-1   rounded-lg ">SwiftPay </button>  </li>
-     <li id="text-title">Optimize  Home page  </li>
-     <li> <h6   class=" bg-white text-base  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+     <p  id="box-title" class="  text-lg font-bold  ">Optimize  Home page  </p>
+     <li> <h6   class=" bg-white text-sm  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
         and ensure onClick works properly  </h6> </li>
         <div class="flex justify-between ">
       <ul>
         <li>Deadline</li>
        <li id="time-box-text"></li>
       </ul>    
-            <button  id="btn-box" class="  bg-blue-600 text-white ">Completed</button>
+            <button  id="btn-box" class="  px-4 py-1 rounded-lg  bg-blue-600 text-white">Completed</button>
         </ul>
     <!--  -->
     <ul class="bg-gray-200   rounded-lg px-4 py-4 space-y-2 ">
         <li><button class="bg-white px-4 py-1   rounded-lg">Meta </button>  </li>
-     <li id="text-title"> Add new emoji 🤲 </li>
-     <li> <h6   class=" bg-white text-base  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+     <p  id="box-title" class=" text-lg font-bold  "> Add new emoji 🤲 <p>
+     <li> <h6   class=" bg-white text-sm  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
         and ensure onClick works properly  </h6> </li>
         <div class="flex justify-between">
       <ul>
         <li>Deadline</li>
        <li id="time-box-text"></li>
       </ul>    
-            <button  id="btn-box" class="btn  bg-blue-600 text-white ">Completed</button>
+            <button  id="btn-box" class="  px-4 py-1 rounded-lg  bg-blue-600 text-white">Completed</button>
         </ul>
     <!--  -->
     <ul class="bg-gray-200   rounded-lg px-4 py-4 space-y-2  ">
         <li><button class="bg-white px-4 py-1   rounded-lg ">Google LLC </button>  </li>
-     <li  id="text-title"> Fix Mobile Button Issue </li>
-     <li> <h6   class=" bg-white text-base  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+     <p  id="box-title" class=" text-lg font-bold "> Integrate OpenAI API </p>
+     <li> <h6   class=" bg-white text-sm  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
         Integrate OpenAI API   </h6> </li>
         <div class="flex justify-between">
       <ul>
         <li>Deadline</li>
        <li id="time-box-text"></li>
       </ul>    
-            <button  id="btn-box"   class="btn    bg-blue-600 text-white  ">Completed</button>
+            <button  id="btn-box"   class="   px-4 py-1 rounded-lg  bg-blue-600 text-white  ">Completed</button>
         </ul>
     <!--  -->
  <ul class="bg-gray-200   rounded-lg px-4 py-4 space-y-2 ">
     <li><button class="bg-white px-4 py-1   rounded-lg">Glassdoar </button>  </li>
- <li id="text-title"> Fix Mobile Button Issue </li>
- <li> <h6  class=" bg-white text-base  text-gray-500 rounded-md py-1 px-1" >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-    Improve Job searching   </h6> </li>
+ <p  id="box-title" class=" text-lg font-bold"> Improve Job searching  </p>
+ <li> <h6  class=" bg-white text-sm   text-gray-500 rounded-md py-1 px-1 ">
+  Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+  Improve Job searching...
+   </h6> </li>
     <div class="flex justify-between">
   <ul>
     <li>Deadline</li>
    <li id="time-box-text" class="text-black">one</li>
   </ul>    
-        <button id="btn-box"  class="btn    bg-blue-600 text-white">Completed</button>
+        <button id="btn-box"  class=" px-4 py-1 rounded-lg  bg-blue-600 text-white">Completed</button>
     </ul>
     <!--  -->
  
@@ -152,16 +155,16 @@ bg-gradient-to-l from-blue-300 to-blue-700 rounded-xl px-5 py-5">
 </section>
 <!--  -->
 <!--  Clear History div -->
- <section id="Clear-History" class=" w-2/12 mx-auto "> 
+ <section id="Clear-History" class=" w-3/12   bg-slate-200 rounded-lg mx-auto px-4"> 
    <div  class="space-y-2  ">
 
 <div class="flex justify-center items-center">
-  <div>
+  <div class="space-y-2">
     <h1 class="text-center text-lg"> Activity Log </h1> 
-   <button  class=" px-4 py-2 rounded-lg  shadow-xl  font-medium text-base bg-blue-600
+   <button  id="history-delete" class=" px-4 py-2 rounded-lg  shadow-xl  font-medium text-base bg-blue-600
     text-white border-none "> Clear History </button>
   </div></div>
-  <div   id="add-history" class="  space-y-4">
+  <div   id="add-history" class="  space-y-2">
  </div>
 </div>
 

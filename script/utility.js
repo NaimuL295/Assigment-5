@@ -3,8 +3,6 @@ function getconvertvalue(id){
     const convertvalue=parseInt(value);
     return convertvalue
 }
-// function adddevent(id){
-//     let idevent =document.getElementById(id)
-// }
+
 
 
