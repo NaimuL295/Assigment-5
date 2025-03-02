@@ -26,7 +26,7 @@ let dateHMS=year.toLocaleTimeString();
 
  colorchange.addEventListener("click",function () {
   
-  let  color=Math.ceil( Math.random()*256 )
+  let  color=Math.ceil( Math.random()*256-1 )
  let colos=`rgb(${color},${color},${color}) `;
 document.body.style.backgroundColor=colos
  })
